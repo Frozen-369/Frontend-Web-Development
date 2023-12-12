@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 60px;
+    height: 55px;
+    width: 100%;
+    background: rgb(67, 110, 238);
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+}
+
+header .logoMaker {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.logoMaker i strong {
+    color: rgb(255, 255, 0);
+}
+
+.logoMaker .logo {
+
+    width: 75px;
+    height: 20px;
+}
+
+
+
+.logoMaker img {
+    height: 10px;
+    width: 10px;
+}
+
+header .searchEng {
+    position: relative;
+    height: 35px;
+    width: 550px;
+    background: white;
+    border-radius: 1px;
+    box-shadow: 0px 0.5px 5px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.searchEng input[type=text] {
+    height: 25px;
+    width: 450px;
+    padding: 5px 10px 0px 15px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.searchEng>i {
+    position: absolute;
+    font-size: 20px;
+    color: rgb(67, 110, 238);
+    right: 16px;
+    bottom: 8px;
+    cursor: pointer;
+
+}
+
+header .login {
+    display: flex;
+    height: 30px;
+    width: 125px;
+    margin: 0px 50px;
+    background: white;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.login p.loginBar {
+    color: rgb(67, 110, 238);
+
+}
+
+header .headerText {
+    color: white;
+    font-size: medium;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+header .arrowDown {
+    position: relative;
+    color: white;
+    font-size: medium;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.arrowDown>i {
+    position: absolute;
+    font-size: 20px;
+    right: -15px;
+    bottom: 3px;
+    font-size: 12px;
+}
+
+header .cart {
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.cart p {
+    float: right;
+    padding-left: 8px;
+}
+
+.cart>i {
+    font-size: 20px;
+}
+
+.space {
+    width: 100%;
+    height: 50px;
+}
+
+main .items {
+    display: flex;
+    height: 110px;
+    width: 100%;
+    border-bottom: 3px solid whitesmoke;
+    box-shadow: 0px 1px 2px rgb(180, 167, 167);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+}
+
+.items .accesories {
+    padding-right: 50px;
+}
+
+.accesories img.travel {
+    transform: scaleX(1.5);
+
+}
+
+main .slider {
+    width: 98.65%;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+    position: relative;
+    z-index: 0;
+    top: -100px;
+
+
+}
+
+.wrapper img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+        
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+
+    }
+
+    75% {
+        transform: translateX(-200%);
+
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* alternative way of using slider */
+
+/* main .slider{
+
+
+    width : 98.65%;
+    height: 300px;
+    margin: 20px 10px;
+    background-image: url(https://source.unsplash.com/4500x900/?airplane);
+    background-size: 100% 100%;
+    animation: slideimg 20s infinite forwards;
+
+} */
+
+
+
+
+/* @keyframes slideimg {
+    0%{
+        background-image: url(https://source.unsplash.com/4500x900/?airplane);
+  
+    }
+
+    25%{
+        background-image: url(https://source.unsplash.com/4500x900/?aeroplane);
+
+    }
+
+
+    50%{
+        background-image: url(https://source.unsplash.com/4500x900/?racing?cars);
+
+    }
+
+    75%{
+        background-image: url(https://source.unsplash.com/4500x900/?sport?cars);
+ 
+    }
+
+    100%{
+        background-image: url(https://source.unsplash.com/4500x900/?airplane);
+  
+    }
+} */
+
+.slider .btn1 {
+    float: left;
+    width: 45px;
+    height: 100px;
+    position: relative;
+    left: 0px;
+    top: 95px;
+    background-color: white;
+    border-radius: 0px 3px 3px 0px;
+    z-index: 1;
+}
+
+.slider .btn2 {
+    float: right;
+    width: 45px;
+    height: 100px;
+    position: relative;
+    right: 0px;
+    top: 95px;
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-radius: 3px 0px 0px 3px;
+    z-index: 1;
+}
+
+.slider .same {
+    border: none;
+    font-size: 45px;
+    font-weight: bolder;
+    margin: 22px 0px 0px 15px;
+}
+
+main .gaming {
+    width: 98.65%;
+    height: 300px;
+    margin-left: 10px;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 3px solid whitesmoke;
+    box-shadow: 0px 1px 2px rgb(180, 167, 167);
+}
+
+.gaming .intro {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 30px 0px 0px 0px;
+}
+
+.gaming .intro .game1 {
+    display: flex;
+    margin-left: 10px;
+}
+
+.gaming .product {
+    position: relative;
+    float: left;
+    left: 182px;
+    bottom: 186px;
+}
+
+.product .gamer {
+    float: left;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.gamer .name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 0.75px;
+}
+
+.gamer .ad {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    color: green;
+}
+
+.gamer .gray {
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    font-size: 14px;
+    line-height: 2;
+
+}
+
+main .view {
+    display: flex;
+    height: 40px;
+    width: 100px;
+    margin: 20px 0px 0px 30px;
+    background: rgb(67, 110, 238);
+    color: white;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(48, 43, 70);
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
